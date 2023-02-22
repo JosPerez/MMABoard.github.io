@@ -13,7 +13,7 @@ const weightClasses = {
   "Middleweight": 10,
   "Women's Middleweight": 11,
   "Light Heavyweight": 12,
-  "Heavyweight": 14
+  "Heavyweight": 15
 };
 // Select the fighters list table
 const fightersTable = document.querySelector('table');
