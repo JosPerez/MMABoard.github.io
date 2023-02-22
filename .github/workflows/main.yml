@@ -22,7 +22,7 @@ jobs:
     - name: Run Python script
       run: python Scrapper/web_scrapper.py
     - name: Add files to Git index
-      run: git add Scrapper/fighters.csv Scrapper/fighters_added.csv Scrapper/fighters_removed.csv
+      run: git add .
     - name: Commit and push changes
       uses: ad-m/github-push-action@master
       with:
