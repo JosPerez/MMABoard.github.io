@@ -171,7 +171,6 @@ form input[type="submit"]:hover {
     border-radius: 5px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
     width: 100%;
-    height: 200px;
     overflow-y: hidden;
   }
   
@@ -191,23 +190,15 @@ form input[type="submit"]:hover {
     height: 100%;
     list-style: none;
     margin: 0;
-    overflow: scroll;
     padding: 0;
-    scrollbar-width: none; /* Firefox */
-    -ms-overflow-style: none; /* IE 10+ */
-  }
-  
-  .fighter-list__ul::-webkit-scrollbar {
-    display: none; /* Chrome, Safari */
   }
   
   .fighter-list__item {
     background-color: #fff;
-    border-bottom: 1px solid #e6e6e6;
     color: #333;
     font-size: 14px;
     padding: 10px;
-    text-align: center;
+    text-align: right;
     height: 40px;
   }
   #add {
@@ -223,7 +214,7 @@ form input[type="submit"]:hover {
       transform: translateX(0%);
     }
     100% {
-      transform: translateX(-50%);
+      transform: translateX(-55%);
     }
   }
   
