@@ -19,7 +19,7 @@ const weightClasses = {
 const fightersTable = document.querySelector('table');
 
 // Retrieve the CSV file using fetch()
-fetch('https://raw.githubusercontent.com/JosPerez/MMABoard.github.io/main/Scrapper/fighters.csv')
+fetch('https://raw.githubusercontent.com/JosPerez/MMABoard.github.io/mains/fighters.csv')
   .then(response => response.text())
   .then(data => {
     // Use the csv-parse library to parse the CSV data
@@ -79,7 +79,7 @@ fetch('https://raw.githubusercontent.com/JosPerez/MMABoard.github.io/main/Scrapp
   .catch(error => console.error(error));
 
   // Retrieve the CSV file using fetch()
-fetch('https://raw.githubusercontent.com/JosPerez/MMABoard.github.io/main/Scrapper/fighters_added.csv')
+fetch('https://raw.githubusercontent.com/JosPerez/MMABoard.github.io/main/fighters_added.csv')
 .then(response => response.text())
 .then(data => {
   // Use the csv-parse library to parse the CSV data
@@ -88,7 +88,7 @@ fetch('https://raw.githubusercontent.com/JosPerez/MMABoard.github.io/main/Scrapp
 })
 .catch(error => console.error(error));
   // Retrieve the CSV file using fetch()
-  fetch('https://raw.githubusercontent.com/JosPerez/MMABoard.github.io/main/Scrapper/fighters_removed.csv')
+  fetch('https://raw.githubusercontent.com/JosPerez/MMABoard.github.io/main/fighters_removed.csv')
   .then(response => response.text())
   .then(data => {
     // Use the csv-parse library to parse the CSV data
