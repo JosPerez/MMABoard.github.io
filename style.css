@@ -246,7 +246,10 @@ form input[type="submit"]:hover {
   
   @keyframes carousel {
     0% {
-      transform: translateX(0);
+      transform: translateX1(10%);
+    }
+    5% {
+      transform: translateX1(0);
     }
     10% {
       transform: translateX(-25%);
@@ -275,8 +278,11 @@ form input[type="submit"]:hover {
     90% {
       transform: translateX(-175%);
     }
+    95% {
+      transform: translateX(-200%);
+    }
     100% {
-      transform: translateX(0);
+      transform: translateX(10%);
     }
   }
   

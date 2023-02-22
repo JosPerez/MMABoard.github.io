@@ -84,12 +84,21 @@ fetch('https://raw.githubusercontent.com/JosPerez/MMABoard.github.io/main/ufc_ev
   const fighters = Papa.parse(data, { header: true });
   // Get the fighter list container element
   const removeFighterList = document.querySelector('.carousel');
-  fighters = fighters.filter(item => item['Name'] !== '');
-  fighters.forEach((fighter) => {
+  const fights = fighters.data.filter(item => item['Name'] !== '');
+  fights.forEach((fighter) => {
     const fighterItem = document.createElement('li');
     const title = document.createElement('h3');
-    title.textContent = fighter['Name'] + " " +  fighter['Record'];
+    title.textContent = fighter['Event'];
+    title.classList.add('event-title')
+    const date = document.createElement('p');
+    date.classList.add('event-date-time')
+    date.textContent = fighter['Date']
+    const place = document.createElement('p');
+    place.classList.add('event-date-time')
+    place.textContent = fighter['Place']
     fighterItem.appendChild(title)
+    fighterItem.appendChild(date)
+    fighterItem.appendChild(place)
     removeFighterList.appendChild(fighterItem);
   });
 })

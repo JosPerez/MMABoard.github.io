@@ -19,8 +19,10 @@ jobs:
         pip install selenium
         pip install beautifulsoup4
         pip install pandas
-    - name: Run Python script
+    - name: Run Fighters Python script
       run: python Scrapper/web_scrapper.py
+    - name: Run Events Python script
+      run: python Scrapper/events.py
     - name: Add files to Git add and commit
       run: |
         git config --local user.email "action@github.com"
