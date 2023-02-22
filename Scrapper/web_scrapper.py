@@ -5,6 +5,7 @@ from selenium.webdriver.support import expected_conditions as EC
 import pandas as pd
 import time
 from bs4 import BeautifulSoup
+import os
 
 # Set the URL for the UFC Spanish athlete directory page
 url = "https://www.ufcespanol.com/athletes/all?filters[0]=status:23"
@@ -75,3 +76,14 @@ removed = pd.concat([df2, df1]).drop_duplicates(keep=False)
 added.to_csv("fighters_added.csv", index=False)
 removed.to_csv("fighters_removed.csv", index=False)
 df.to_csv("fighters.csv", index=False)
+
+# specify the file path
+filepath = "ufc_spanish_fighters_update.csv"
+
+# check if the file exists
+if os.path.exists(filepath):
+    # remove the file
+    os.remove(filepath)
+    print("File removed:", filepath)
+else:
+    print("File not found:", filepath)
