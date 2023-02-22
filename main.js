@@ -19,7 +19,7 @@ const weightClasses = {
 const fightersTable = document.querySelector('table');
 
 // Retrieve the CSV file using fetch()
-fetch('https://raw.githubusercontent.com/JosPerez/MMABoard.github.io/mains/fighters.csv')
+fetch('https://raw.githubusercontent.com/JosPerez/MMABoard.github.io/main/fighters.csv')
   .then(response => response.text())
   .then(data => {
     // Use the csv-parse library to parse the CSV data
