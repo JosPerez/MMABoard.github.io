@@ -1,8 +1,7 @@
 name: Run Python Script
 
 on:
-  push:
-    branches: [ main ]
+  workflow_dispatch:
 
 jobs:
   run-script:
@@ -21,13 +20,15 @@ jobs:
         pip install beautifulsoup4
         pip install pandas
     - name: Run Python script
-      run: python web_scrapper.py
-    - name: Save CSV files
-      uses: actions/upload-artifact@v2
+      run: python Scrapper/web_scrapper.py
+    - name: Add files to Git index
+      run: git add Scrapper/fighters.csv Scrapper/fighters_added.csv Scrapper/fighters_removed.csv
+    - name: Commit and push changes
+      uses: ad-m/github-push-action@master
       with:
-        name: CSV files
-        path: |
-          fighters.csv
-          fighters_added.csv
-          fighters_removed.csv
+        github_token: ${{ secrets.OWN_GITHUB_TOKEN }}
+        branch: main
+        directory: .
+        message: Update files
+
 
