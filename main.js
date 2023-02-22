@@ -19,7 +19,7 @@ const weightClasses = {
 const fightersTable = document.querySelector('table');
 
 // Retrieve the CSV file using fetch()
-fetch('https://raw.githubusercontent.com/JosPerez/MMABoard.github.io/main/fighters.csv')
+fetch('https://raw.githubusercontent.com/JosPerez/MMABoard.github.io/main/Scrapper/fighters.csv')
   .then(response => response.text())
   .then(data => {
     // Use the csv-parse library to parse the CSV data
@@ -75,8 +75,25 @@ fetch('https://raw.githubusercontent.com/JosPerez/MMABoard.github.io/main/fighte
       `;
       fightersTable.querySelector('tbody').appendChild(tableRow);
     });
+  })
+  .catch(error => console.error(error));
 
-    createFighterList(fighters.data.slice(30, 40),fighters.data.slice(100, 110));
+  // Retrieve the CSV file using fetch()
+fetch('https://raw.githubusercontent.com/JosPerez/MMABoard.github.io/main/Scrapper/fighters_added.csv')
+.then(response => response.text())
+.then(data => {
+  // Use the csv-parse library to parse the CSV data
+  const fighters = Papa.parse(data, { header: true });
+  createFighterListAdd(fighters.data)
+})
+.catch(error => console.error(error));
+  // Retrieve the CSV file using fetch()
+  fetch('https://raw.githubusercontent.com/JosPerez/MMABoard.github.io/main/Scrapper/fighters_removed.csv')
+  .then(response => response.text())
+  .then(data => {
+    // Use the csv-parse library to parse the CSV data
+    const fighters = Papa.parse(data, { header: true });
+    createFighterListRemove(fighters.data);
   })
   .catch(error => console.error(error));
 
@@ -138,10 +155,9 @@ fetch('https://raw.githubusercontent.com/JosPerez/MMABoard.github.io/main/fighte
       sortTable(table, i, ascending);
     });
   });
-  function createFighterList(add, remove) {
+  function createFighterListAdd(add) {
     // Get the fighter list container element
     const addFighterList = document.querySelector('#added');
-    const removeFighterList = document.querySelector('#removed');
     // Add each fighter to the list
     add.forEach((fighter) => {
       const fighterItem = document.createElement('li');
@@ -149,7 +165,10 @@ fetch('https://raw.githubusercontent.com/JosPerez/MMABoard.github.io/main/fighte
       fighterItem.textContent = fighter['Name'] + " " +  fighter['Record'];
       addFighterList.appendChild(fighterItem);
     });
-    // Add each fighter to the list
+  }
+  function createFighterListRemove(remove) {
+    // Get the fighter list container element
+    const removeFighterList = document.querySelector('#removed');
     remove.forEach((fighter) => {
       const fighterItem = document.createElement('li');
       fighterItem.classList.add('fighter-list__item');
