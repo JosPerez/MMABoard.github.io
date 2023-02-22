@@ -27,7 +27,7 @@ jobs:
       with:
         name: CSV files
         path: |
-          fighters.csv
-          fighters_added.csv
-          fighters_removed.csv
+          Scrapper/fighters.csv
+          Scrapper/fighters_added.csv
+          Scrapper/fighters_removed.csv
 
