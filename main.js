@@ -45,9 +45,10 @@ fetch('https://raw.githubusercontent.com/JosPerez/MMABoard.github.io/main/fighte
       }
       return 0;
     });
-
+    const undefeatedFighter = cleanFighters.filter(item => parseInt(item['Record'].split("-")[1]) === 0);
+    console.log(undefeatedFighter)
     // Get the top 8 fighters
-    const topFighters = cleanFighters.slice(0, 9);
+    const topFighters = undefeatedFighter.slice(0, 12);
 
     // Create an HTML list of the top fighters
     const topFightersList = document.createElement('ul');
