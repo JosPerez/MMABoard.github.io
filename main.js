@@ -76,7 +76,24 @@ fetch('https://raw.githubusercontent.com/JosPerez/MMABoard.github.io/main/fighte
     });
   })
   .catch(error => console.error(error));
-
+// Retrieve the CSV file using fetch()
+fetch('https://raw.githubusercontent.com/JosPerez/MMABoard.github.io/main/ufc_events.csv')
+.then(response => response.text())
+.then(data => {
+  // Use the csv-parse library to parse the CSV data
+  const fighters = Papa.parse(data, { header: true });
+  // Get the fighter list container element
+  const removeFighterList = document.querySelector('.carousel');
+  fighters = fighters.filter(item => item['Name'] !== '');
+  fighters.forEach((fighter) => {
+    const fighterItem = document.createElement('li');
+    const title = document.createElement('h3');
+    title.textContent = fighter['Name'] + " " +  fighter['Record'];
+    fighterItem.appendChild(title)
+    removeFighterList.appendChild(fighterItem);
+  });
+})
+.catch(error => console.error(error));
   // Retrieve the CSV file using fetch()
 fetch('https://raw.githubusercontent.com/JosPerez/MMABoard.github.io/main/fighters_added.csv')
 .then(response => response.text())
