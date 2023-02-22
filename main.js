@@ -19,7 +19,7 @@ const weightClasses = {
 const fightersTable = document.querySelector('table');
 
 // Retrieve the CSV file using fetch()
-fetch('http://localhost:8080/fighters.csv')
+fetch('/fighters.csv')
   .then(response => response.text())
   .then(data => {
     // Use the csv-parse library to parse the CSV data
