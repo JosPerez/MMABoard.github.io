@@ -221,14 +221,15 @@ form input[type="submit"]:hover {
     margin: 0;
     list-style: none;
     position: relative;
-    animation: carousel 20s infinite;
+    animation: carousel 25s infinite;
   }
   
   .carousel li {
     flex: 0 0 300px;
     height: 150px;
     margin-right: 20px;
-    padding-top: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
     position: relative;
     text-align: center;
     border: 1px solid #660066;
@@ -246,7 +247,7 @@ form input[type="submit"]:hover {
   
   @keyframes carousel {
     0% {
-      transform: translateX1(10%);
+      transform: translateX1(15%);
     }
     5% {
       transform: translateX1(0);
@@ -254,35 +255,53 @@ form input[type="submit"]:hover {
     10% {
       transform: translateX(-25%);
     }
-    20% {
+    15% {
       transform: translateX(-50%);
     }
-    30% {
+    20% {
       transform: translateX(-75%);
     }
+    25% {
+      transform: translateX(-100%);
+    }
+    30% {
+      transform: translateX(-125%);
+    }
+    35% {
+      transform: translateX(-150%);
+    }
     40% {
-      transform: translateX(-90%);
-    }
-    50% {
-      transform: translateX(-105%);
-    }
-    60% {
-      transform: translateX(-130%);
-    }
-    70% {
-      transform: translateX(-145%);
-    }
-    80% {
-      transform: translateX(-160%);
-    }
-    90% {
       transform: translateX(-175%);
     }
-    95% {
+    45% {
       transform: translateX(-200%);
     }
+    50% {
+      transform: translateX(-225%);
+    }
+    65% {
+      transform: translateX(-250%);
+    }
+    70% {
+      transform: translateX(-275%);
+    }
+    75% {
+      transform: translateX(-300%);
+    }
+    80% {
+      transform: translateX(-325%);
+    }
+    85% {
+      transform: translateX(-350%);
+    }
+    90% {
+      transform: translateX(-375%);
+    }
+    95% {
+      transform: translateX(-400%);
+    }
     100% {
-      transform: translateX(10%);
+      transform: translateX(-425%);
     }
   }
   

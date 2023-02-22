@@ -84,7 +84,7 @@ fetch('https://raw.githubusercontent.com/JosPerez/MMABoard.github.io/main/ufc_ev
   const fighters = Papa.parse(data, { header: true });
   // Get the fighter list container element
   const removeFighterList = document.querySelector('.carousel');
-  const fights = fighters.data.filter(item => item['Name'] !== '');
+  const fights = fighters.data.filter(item => item['Event'] !== '');
   fights.forEach((fighter) => {
     const fighterItem = document.createElement('li');
     const title = document.createElement('h3');
