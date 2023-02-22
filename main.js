@@ -1,3 +1,11 @@
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+}
+
+// Call the googleTranslateElementInit function after the page has finished loading
+window.onload = function() {
+  googleTranslateElementInit();
+};
 const weightClasses = {
   "Women's Strawweight": -1,
   "Flyweight": 1,
@@ -17,7 +25,6 @@ const weightClasses = {
 };
 // Select the fighters list table
 const fightersTable = document.querySelector('table');
-
 // Retrieve the CSV file using fetch()
 fetch('https://raw.githubusercontent.com/JosPerez/MMABoard.github.io/main/fighters.csv')
   .then(response => response.text())

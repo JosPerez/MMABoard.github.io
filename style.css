@@ -26,7 +26,14 @@ a:hover {
 .navbar {
 	background-color: #660066;
 	display: flex;
-	justify-content: center;
+  align-items: center;
+	justify-content: space-between;
+  height: 100px;
+}
+
+.navbar a.nav-right {
+  margin-right: auto;
+  margin-left: 0;
 }
 
 .navbar a {
@@ -232,7 +239,7 @@ form input[type="submit"]:hover {
     padding-right: 5px;
     position: relative;
     text-align: center;
-    border: 1px solid #660066;
+    border: 3px solid #660066;
     border-radius: 10px;
   }
   
@@ -314,5 +321,4 @@ form input[type="submit"]:hover {
       transform: translateX(-55%);
     }
   }
-  
   
