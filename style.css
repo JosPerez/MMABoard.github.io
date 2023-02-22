@@ -1,0 +1,230 @@
+/* Default styles */
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: #000000;
+	color: #FFFFFF;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+}
+
+a {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #AAAAAA;
+}
+
+/* Navigation bar */
+.navbar {
+	background-color: #660066;
+	display: flex;
+	justify-content: center;
+}
+
+.navbar a {
+	display: block;
+	padding: 10px 20px;
+}
+
+.navbar a:hover {
+	background-color: #440044;
+}
+
+/* Content */
+.content {
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+.content h1 {
+	font-size: 36px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.content p {
+	margin-bottom: 20px;
+}
+
+/* Fighters table */
+#fighters {
+    height: 800px; /* set the height to a fixed value */
+    overflow-y: scroll; /* add a scrollbar if the content overflows */
+}
+table {
+	border-collapse: collapse;
+	margin-bottom: 20px;
+	width: 100%;
+}
+thead th, tbody td {
+    border: 1px solid black;
+    padding: 8px;
+  }
+
+thead {
+    position: sticky;
+    top: 0;
+	background-color: #660066;
+	color: #FFFFFF;
+}
+
+thead th {
+	font-weight: bold;
+	padding: 10px;
+	text-align: left;
+}
+
+tbody tr {
+	background-color: #440044;
+	color: #FFFFFF;
+}
+
+tbody tr:nth-child(2n) {
+	background-color: #660066;
+}
+
+tbody td {
+	padding: 10px;
+}
+/* Roaster form */
+form {
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 20px;
+}
+
+form label {
+	flex: 1 0 100%;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+form input,
+form select {
+	flex: 1 0 calc(50% - 10px);
+	padding: 10px;
+}
+
+form select {
+	margin-right: 20px;
+}
+
+form input[type="submit"] {
+	background-color: #660066;
+	border: none;
+	color: #FFFFFF;
+	cursor: pointer;
+	padding: 10px 20px;
+}
+
+form input[type="submit"]:hover {
+	background-color: #440044;
+}
+.card-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+.card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    width: 200px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card h2 {
+    font-size: 1.2em;
+    margin: 0 0 10px;
+}
+
+.card p {
+    font-size: 1em;
+    margin: 0;
+}
+.fighter-list-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+.fighter-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    height: 200px;
+    overflow-y: hidden;
+  }
+  
+  .fighter-list__header {
+    border-bottom: 1px solid #e6e6e6;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    color: white;
+  }
+  
+  .fighter-list__ul {
+    animation: marquee 10s linear infinite;
+    width: 100%;
+    height: 100%;
+    list-style: none;
+    margin: 0;
+    overflow: scroll;
+    padding: 0;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE 10+ */
+  }
+  
+  .fighter-list__ul::-webkit-scrollbar {
+    display: none; /* Chrome, Safari */
+  }
+  
+  .fighter-list__item {
+    background-color: #fff;
+    border-bottom: 1px solid #e6e6e6;
+    color: #333;
+    font-size: 14px;
+    padding: 10px;
+    text-align: center;
+    height: 40px;
+  }
+  #add {
+    background-color: rgb(18, 252, 18);
+    
+  }
+  #remove {
+    background-color: red;
+  }
+  
+  @keyframes marquee {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+  
+  

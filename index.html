@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MySpace - MMA News</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+	<!-- Navigation bar -->
+	<div class="navbar">
+		<a href="news.html">News</a>
+		<a href="fighters.html">Fighters</a>
+		<a href="roaster.html">Roaster</a>
+	</div>
+
+	<!-- News page -->
+	<div class="content">
+		<h1>MMA News</h1>
+		<div class="news">
+            <h2>Top 9 Most Wins MMA Fighters</h2>
+        </div>
+	</div>
+
+	<!-- Fighters page -->
+	<div class="content">
+		<h1>Fighters List</h1>
+		<p>Here is the list of fighters:</p>
+		<div id="fighters">
+            <table>
+                <thead>
+                    <tr>
+                        <th data-order="asc">Name</th>
+                        <th data-order="asc">Weight class</th>
+                        <th data-order="asc">Record</th>
+                      </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+	</div>
+
+	<!-- Roaster page -->
+	<div class="content">
+		<h1>Roaster Added/Romoved</h1>
+		<p>Here you see add or remove fighters from the roaster.</p>
+		<div class="fighter-list-wrapper">
+            <div class="fighter-list">
+                <div class="fighter-list__header" id="add">Added Fighters</div>
+                <ul class="fighter-list__ul" id="added">
+                </ul>
+            </div>
+            <div class="fighter-list">
+              <div class="fighter-list__header" id="remove">Removed Fighters</div>
+              <ul class="fighter-list__ul" id="removed">
+              </ul>
+            </div>
+          </div>
+        </div>          
+	</div>
+    <!-- JavaScript code to load fighters from Excel and handle form submission -->
+    <script src="https://cdn.jsdelivr.net/npm/papaparse@5.3.0/papaparse.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
