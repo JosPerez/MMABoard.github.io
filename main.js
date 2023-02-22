@@ -152,14 +152,32 @@ fetch('https://raw.githubusercontent.com/JosPerez/MMABoard.github.io/main/fighte
         const cellValue2 = row2.querySelector(`td:nth-child(${column + 1})`).innerText.trim();
         const winsA = parseInt(cellValue1.split("-")[0]);
         const winsB = parseInt(cellValue2.split("-")[0]);
+        const losesA = parseInt(cellValue1.split("-")[1]);
+        const losesB = parseInt(cellValue2.split("-")[1])
+        const diffA = winsA - losesA;
+        const diffB = winsB - losesB;
         
-        if (winsA < winsB) {
+        // Compare the number of wins
+        if (winsA > winsB) {
           return asc ? -1 : 1;
-        } else if (winsA > winsB) {
+        } else if (winsA < winsB) {
           return asc ? 1 : -1;
         } else {
-          return 0;
-        }
+          // If the number of wins is the same, compare the number of losses
+          if (losesA < losesB) {
+            return asc ? -1 : 1;
+          } else if (losesA > losesB) {
+            return asc? 1 : -1;
+          } else {
+            if (diffA > diffB) {
+              return asc ? -1 : 1;
+            } else if (diffA < diffB) {
+              return asc ? 1 : -1;
+            } else {
+              return 0;
+            }
+          }
+        }        
       });
     } else { 
       // Sort rows based on column value
