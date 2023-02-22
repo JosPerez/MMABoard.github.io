@@ -24,11 +24,8 @@ jobs:
     - name: Add files to Git index
       run: git add .
     - name: Commit and push changes
-      uses: ad-m/github-push-action@master
-      with:
-        github_token: ${{ secrets.OWN_GITHUB_TOKEN }}
-        branch: main
-        directory: .
-        message: Update files
+      run: |
+        git commit -m "Update Fighters files to the main branch"
+        git push
 
 
