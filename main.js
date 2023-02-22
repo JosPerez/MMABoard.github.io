@@ -24,9 +24,9 @@ fetch('https://raw.githubusercontent.com/JosPerez/MMABoard.github.io/main/fighte
   .then(data => {
     // Use the csv-parse library to parse the CSV data
     const fighters = Papa.parse(data, { header: true });
-
     // Sort the fighters by their record in descending order
-    fighters.data.sort((a, b) => {
+    const cleanFighters = fighters.data.filter(item => item['Name'] !== '');
+    cleanFighters.sort((a, b) => {
       const recordA = a.Record.split('(')[0].trim().split('-');
       const recordB = b.Record.split('(')[0].trim().split('-');
       const winsA = parseInt(recordA[0]);
@@ -35,13 +35,12 @@ fetch('https://raw.githubusercontent.com/JosPerez/MMABoard.github.io/main/fighte
         return -1;
       } else if (winsA < winsB) {
         return 1;
-      } else {
-        return 0;
       }
+      return 0;
     });
 
     // Get the top 8 fighters
-    const topFighters = fighters.data.slice(0, 9);
+    const topFighters = cleanFighters.slice(0, 9);
 
     // Create an HTML list of the top fighters
     const topFightersList = document.createElement('ul');
@@ -66,7 +65,7 @@ fetch('https://raw.githubusercontent.com/JosPerez/MMABoard.github.io/main/fighte
 
 
     // Loop through the rows and create the table rows
-    fighters.data.forEach((row) => {
+    cleanFighters.forEach((row) => {
       const tableRow = document.createElement('tr');
       tableRow.innerHTML = `
         <td>${row['Name']}</td>
@@ -158,6 +157,7 @@ fetch('https://raw.githubusercontent.com/JosPerez/MMABoard.github.io/main/fighte
   function createFighterListAdd(add) {
     // Get the fighter list container element
     const addFighterList = document.querySelector('#added');
+    add = add.filter(item => item['Name'] !== '');
     // Add each fighter to the list
     add.forEach((fighter) => {
       const fighterItem = document.createElement('li');
@@ -169,6 +169,7 @@ fetch('https://raw.githubusercontent.com/JosPerez/MMABoard.github.io/main/fighte
   function createFighterListRemove(remove) {
     // Get the fighter list container element
     const removeFighterList = document.querySelector('#removed');
+    remove = remove.filter(item => item['Name'] !== '');
     remove.forEach((fighter) => {
       const fighterItem = document.createElement('li');
       fighterItem.classList.add('fighter-list__item');
