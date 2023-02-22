@@ -217,7 +217,7 @@ form input[type="submit"]:hover {
   }
   .carousel-container {
     width: 100%;
-    overflow: hidden;
+    overflow-x: visible;
     position: relative;
   }
   
