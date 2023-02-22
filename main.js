@@ -7,21 +7,21 @@ window.onload = function() {
   googleTranslateElementInit();
 };
 const weightClasses = {
-  "Women's Strawweight": -1,
-  "Flyweight": 1,
-  "Women's Flyweight": 0,
-  "Bantamweight": 3,
-  "Women's Bantamweight": 2,
-  "Featherweight": 5,
-  "Women's Featherweight": 4,
-  "Lightweight": 7,
-  "Women's Lightweight": 6,
-  "Welterweight": 9,
+  "Women's Strawweight": 0,
+  "Flyweight": 2,
+  "Women's Flyweight": 1,
+  "Bantamweight": 4,
+  "Women's Bantamweight": 3,
+  "Featherweight": 6,
+  "Women's Featherweight": 5,
+  "Lightweight": 8,
+  "Women's Lightweight": 7,
+  "Welterweight": 10,
   "Women's Welterweight": 9,
-  "Middleweight": 10,
+  "Middleweight": 12,
   "Women's Middleweight": 11,
-  "Light Heavyweight": 12,
-  "Heavyweight": 15
+  "Light Heavyweight": 13,
+  "Heavyweight": 14
 };
 // Select the fighters list table
 const fightersTable = document.querySelector('table');
@@ -139,9 +139,9 @@ fetch('https://raw.githubusercontent.com/JosPerez/MMABoard.github.io/main/fighte
         const bWeightClass = weightClasses[b.querySelector(`td:nth-child(${column + 1})`).innerText.trim()];
         
         if (aWeightClass < bWeightClass) {
-          return -1;
+          return asc ? -1 : 1;
         } else if (aWeightClass > bWeightClass) {
-          return 1;
+          return asc ? 1 : -1;
         } else {
           return 0;
         }
@@ -153,10 +153,10 @@ fetch('https://raw.githubusercontent.com/JosPerez/MMABoard.github.io/main/fighte
         const winsA = parseInt(cellValue1.split("-")[0]);
         const winsB = parseInt(cellValue2.split("-")[0]);
         
-        if (winsA > winsB) {
-          return -1;
-        } else if (winsA < winsB) {
-          return 1;
+        if (winsA < winsB) {
+          return asc ? -1 : 1;
+        } else if (winsA > winsB) {
+          return asc ? 1 : -1;
         } else {
           return 0;
         }
