@@ -21,11 +21,17 @@ jobs:
         pip install pandas
     - name: Run Python script
       run: python Scrapper/web_scrapper.py
-    - name: Add files to Git index
-      run: git add .
-    - name: Commit and push changes
+    - name: Add files to Git add and commit
       run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add .
         git commit -m "Update Fighters files to the main branch"
-        git push
+    - name: Push changes
+      uses: ad-m/github-push-action@master
+      with:
+        branch: main
+        github_token: ${{ secrets.OWN_GITHUB_TOKEN }}
+
 
 
