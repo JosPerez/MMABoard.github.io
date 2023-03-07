@@ -57,7 +57,8 @@ for index, row in df.iterrows():
     first_banner = container_record.find_all("p", {"class": "athlete-stats__stat-numb"})
     if first_banner:
       wins_by_ko = first_banner[0].text.strip()
-      wins_by_first_round_ko = first_banner[1].text.strip()
+      if len(first_banner) > 1:
+        wins_by_first_round_ko = first_banner[1].text.strip()
 
     #Obtain significant striking data overlap-athlete-content overlap-athlete-content--horizontal
     second_banner = container_record.find("div", {"class": "overlap-athlete-content overlap-athlete-content--horizontal"})

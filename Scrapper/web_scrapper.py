@@ -61,11 +61,10 @@ for index, row in enumerate(athletes):
     # Add the fighter data to the list of fighters
     words = name.split()
     first_name = words[0]
-    pattern = r'^[a-zA-Z]+$'
     last_name = ""
     if len(words) > 1:
-      if re.match(pattern, words[1]):
         last_name = words[1]
+        
     fighter = {"first_name": first_name,
                "last_name": last_name,
                "nickname": nickname ,
