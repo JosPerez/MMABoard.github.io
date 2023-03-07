@@ -10,7 +10,7 @@ from bs4 import BeautifulSoup
 # Set the URL for the UFC Spanish athlete directory page
 url = "https://www.ufcespanol.com"
 
-df = pd.read_csv('ufc_spanish_fighters_update.csv') 
+df = pd.read_csv('ufc_spanish_fighters_update.csv')
 
 options = webdriver.ChromeOptions()
 options.add_argument("--headless")
@@ -23,6 +23,7 @@ for index, row in df.iterrows():
   uri = row['uri']
   print("Se buscan peleador en", url + uri)
   driver.get(url + uri)
+  #driver.get("https://www.ufcespanol.com/athlete/israel-adesanya")
   time.sleep(2)
   # get the updated HTML content
   html = driver.page_source
@@ -211,11 +212,11 @@ for index, row in df.iterrows():
   figtherStat = {"first_name": row['first_name'],
                  "last_name": "" if pd.isnull(row['last_name']) else row['last_name'],
                  "nickname": "" if pd.isnull(row['nickname']) else row['nickname'],
-                 "record": row["record"],
+                 "record": "" if pd.isnull(row['record']) else row['record'],,
                  "age": age,
                  "height": height,
                  "weight": weight,
-                 "weight_class": row['weight_class'],
+                 "weight_class": "" if pd.isnull(row['weight_class']) else row['weight_class'],,
                  "debut": debut,
                  "arm_reach": arm_reach,
                  "leg_reach": leg_reach,
@@ -249,4 +250,5 @@ for index, row in df.iterrows():
 
   # Write the DataFrame to an Excel file
   df.to_csv("fighters_extended_info.csv", index=False)
+
 
