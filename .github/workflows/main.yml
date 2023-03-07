@@ -21,8 +21,8 @@ jobs:
         pip install pandas
     - name: Run Fighters Python script
       run: python Scrapper/web_scrapper.py
-    - name: Run Events Python script
-      run: python Scrapper/events.py
+    - name: Run UFC stat Python script
+      run: python Scrapper/ufc_stats_scrapper.py
     - name: Add files to Git add and commit
       run: |
         git config --local user.email "action@github.com"

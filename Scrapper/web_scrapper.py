@@ -4,8 +4,8 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 import pandas as pd
 import time
+import re
 from bs4 import BeautifulSoup
-import os
 
 # Set the URL for the UFC Spanish athlete directory page
 url = "https://www.ufcespanol.com/athletes/all?filters[0]=status:23"
@@ -39,10 +39,10 @@ soup = BeautifulSoup(html, 'html.parser')
 
 # Find the table that contains the fighter data
 athletes = soup.find_all('div', {'class': 'c-listing-athlete-flipcard__front'})
-
+athletes_back = soup.find_all('div', {'class': 'c-listing-athlete-flipcard__back'})
 # Find all the rows in the table that contain fighter data
 fighters = []
-for row in athletes:
+for index, row in enumerate(athletes):
     # Extract the fighter's name
     name = row.find("span", {"class": "c-listing-athlete__name"}).text.strip()
 
@@ -52,38 +52,32 @@ for row in athletes:
     # Extract the figther's record
     record = row.find("span", {"class": "c-listing-athlete__record"}).text.strip()
 
-    # Add the fighter data to the list of fighters
-    fighters.append({"Name": name, "Weight Class": weight_class, "Record": record})
+    # Extract the figther's nickname
+    nickname = row.find("span", {"class": "c-listing-athlete__nickname"}).text.strip()
 
-print(fighters)
+    # Extract the figther's uri
+    uri = athletes_back[index].find("a", {"class": "e-button--black"}).get('href')
+
+    # Add the fighter data to the list of fighters
+    words = name.split()
+    first_name = words[0]
+    pattern = r'^[a-zA-Z]+$'
+    last_name = ""
+    if len(words) > 1:
+      if re.match(pattern, words[1]):
+        last_name = words[1]
+    fighter = {"first_name": first_name,
+               "last_name": last_name,
+               "nickname": nickname ,
+               "weight_class": weight_class,
+               "record": record,
+               "uri":uri}
+    print("\n", fighter, "\n")
+    fighters.append(fighter)
+
+
 # Convert the list of fighters to a pandas DataFrame
 df = pd.DataFrame(fighters)
 
 # Write the DataFrame to an Excel file
 df.to_csv("ufc_spanish_fighters_update.csv", index=False)
-
-# read the two excel files into pandas dataframes
-df1 = pd.read_csv('ufc_spanish_fighters_update.csv')
-df2 = pd.read_csv('fighters.csv')
-
-# get the data that is in file1 but not in file2
-added = pd.concat([df1, df2]).drop_duplicates(keep=False)
-
-# get the data that is in file2 but not in file1
-removed = pd.concat([df2, df1]).drop_duplicates(keep=False)
-
-# Write the DataFrame to an Excel file
-added.to_csv("fighters_added.csv", index=False)
-removed.to_csv("fighters_removed.csv", index=False)
-df.to_csv("fighters.csv", index=False)
-
-# specify the file path
-filepath = "ufc_spanish_fighters_update.csv"
-
-# check if the file exists
-if os.path.exists(filepath):
-    # remove the file
-    os.remove(filepath)
-    print("File removed:", filepath)
-else:
-    print("File not found:", filepath)
