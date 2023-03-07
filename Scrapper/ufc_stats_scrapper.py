@@ -211,6 +211,7 @@ for index, row in df.iterrows():
   figtherStat = {"first_name": row['first_name'],
                  "last_name": "" if pd.isnull(row['last_name']) else row['last_name'],
                  "nickname": "" if pd.isnull(row['nickname']) else row['nickname'],
+                 "record": row["record"],
                  "age": age,
                  "height": height,
                  "weight": weight,
