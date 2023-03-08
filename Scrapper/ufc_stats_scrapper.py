@@ -216,7 +216,7 @@ for index, row in df.iterrows():
                  "age": age,
                  "height": height,
                  "weight": weight,
-                 "weight_class": "" if pd.isnull(row['weight_class']) else row['weight_class'],,
+                 "weight_class": "" if pd.isnull(row['weight_class']) else row['weight_class'],
                  "debut": debut,
                  "arm_reach": arm_reach,
                  "leg_reach": leg_reach,
