@@ -102,6 +102,7 @@ Chris,Birchler,,Light Heavyweight,7-4-0 (W-L-D),/athlete/shon-bredi-0
 Caio,Bittencourt,,Middleweight,0-1-0 (W-L-D),/athlete/kori-makkenna-9
 Simon,Biyong,,Light Heavyweight,0-0-0 (W-L-D),/athlete/simon-biyong
 Jan,Błachowicz,,Light Heavyweight,29-9-1 (W-L-D),/athlete/jan-blachowicz
+Anthony,Blackburn,"""Babyface""",Middleweight,0-0-0 (W-L-D),/athlete/anthony-blackburn
 Sherrard,Blackledge,,Lightweight,1-1-0 (W-L-D),/athlete/sherrard-blackledge
 Da'Mon,Blackshear,,Bantamweight,12-5-1 (W-L-D),/athlete/damon-blackshear
 Erin,Blanchfield,"""Cold Blooded""",Women's Flyweight,11-1-0 (W-L-D),/athlete/erin-blanchfield
@@ -186,6 +187,7 @@ Jamie,Colleen,,Women's Strawweight,4-2-0 (W-L-D),/athlete/jamie-colleen
 Jake,Collier,"""The Prototype""",Heavyweight,13-8-0 (W-L-D),/athlete/jake-collier
 Marcos,Conrado,,Heavyweight,0-0-0 (W-L-D),/athlete/marcos-conrado-junior
 Michael,Cora,,Welterweight,4-2-0 (W-L-D),/athlete/michael-cora
+Cory,Corbin,"""Hamma""",Heavyweight,0-0-0 (W-L-D),/athlete/cory-corbin
 Waldo,Cortes,"""Salsa Boy """,Heavyweight,9-0-0 (W-L-D),/athlete/waldo-cortes-acosta
 Reyes,Cortez,,Bantamweight,0-1-0 (W-L-D),/athlete/mariya-agapova-4
 Tracy,Cortez,,Women's Flyweight,10-1-0 (W-L-D),/athlete/tracy-cortez
@@ -197,6 +199,7 @@ Oscar,Cota,"""Elevation""",Heavyweight,10-2-0 (W-L-D),/athlete/oscar-cota
 JR,Coughran,,Featherweight,4-1-0 (W-L-D),/athlete/jr-coughran-0
 Colby,Covington,"""Chaos""",Welterweight,17-3-0 (W-L-D),/athlete/colby-covington
 Hailey,Cowan,"""All Hail """,Women's Bantamweight,7-2-0 (W-L-D),/athlete/hailey-cowan
+Cody,Cox,"""Controversy""",Heavyweight,0-0-0 (W-L-D),/athlete/cody-cox
 Paul,Craig,"""BearJew""",Light Heavyweight,16-6-1 (W-L-D),/athlete/paul-craig
 Duane,Crespo,"""Iron Giant""",Heavyweight,0-0-0 (W-L-D),/athlete/duane-crespo
 Kenneth,Cross,,Lightweight,11-3-0 (W-L-D),/athlete/kenneth-cross
@@ -240,9 +243,9 @@ Mackenzie,Dern,,Women's Strawweight,12-3-0 (W-L-D),/athlete/mackenzie-dern
 Micol,Di,,Women's Strawweight,0-0-0 (W-L-D),/athlete/micol-di-segni
 Marc,Diakiese,"""Bonecrusher""",Lightweight,16-6-0 (W-L-D),/athlete/marc-diakiese
 Mike,Diamond,"""Blood""",Welterweight,3-2-0 (W-L-D),/athlete/blud-daymond
-Adrian,Diaz,,Featherweight,11-5-1 (W-L-D),/athlete/adrian-diaz
 Ozzy,Diaz,,Middleweight,0-1-0 (W-L-D),/athlete/ozzy-diaz
 Nick,Diaz,,Middleweight,26-11-0 (W-L-D),/athlete/nick-diaz
+Adrian,Diaz,,Featherweight,11-5-1 (W-L-D),/athlete/adrian-diaz
 Damien,Dibbell,"""The Bell""",Heavyweight,0-0-0 (W-L-D),/athlete/damien-dibbell
 Rico,DiSciullo,,Bantamweight,9-3-0 (W-L-D),/athlete/rico-disciullo
 Matt,Dixon,,Welterweight,9-1-0 (W-L-D),/athlete/matt-dixon
@@ -253,13 +256,14 @@ Rafael,Dos,,Welterweight,32-14-0 (W-L-D),/athlete/rafael-dos-anjos
 Acacio,dos,,Light Heavyweight,0-1-0 (W-L-D),/athlete/acacio-dos-santos
 Maiara,Amajanas,,Women's Strawweight,0-0-0 (W-L-D),/athlete/maiara-amajanas-dos-santos
 Elizeu,dos,"""Capoeira""",Welterweight,23-7-0 (W-L-D),/athlete/elizeu-dos-santos
+Bryan,Dozier,"""Doozie""",Heavyweight,0-0-0 (W-L-D),/athlete/bryan-dozier
 Wesley,Drain,"""All the Smoke""",Middleweight,0-0-0 (W-L-D),/athlete/wesley-drain
 Kyle,Driscoll,,Featherweight,12-3-0 (W-L-D),/athlete/kyle-driscoll
 Dricus,Du,"""Stillknocks""",Middleweight,19-2-0 (W-L-D),/athlete/dricus-du-plessis
 Emily,Ducote,"""Gordinha""",Women's Strawweight,12-7-0 (W-L-D),/athlete/emily-ducote
 Viktoriia,Dudakova,,Women's Strawweight,6-0-0 (W-L-D),/athlete/victoria-dudakova
 Isaac,Dulgarian,"""The Midwest Choppa""",Featherweight,5-0-0 (W-L-D),/athlete/isaac-dulgarian
-Sedriques,Dumas,,Middleweight,7-0-0 (W-L-D),/athlete/sedriques-dumas
+Sedriques,Dumas,"""The Reaper""",Middleweight,7-0-0 (W-L-D),/athlete/sedriques-dumas
 Norma,Dumont,"""The Imortal""",Women's Featherweight,8-2-0 (W-L-D),/athlete/norma-dumont
 Chris,Duncan,"""The Problem""",Lightweight,9-1-0 (W-L-D),/athlete/lyudovit-klayn-4
 Christian,Leroy,,Middleweight,0-0-0 (W-L-D),/athlete/christian-leroy-duncan
@@ -269,9 +273,9 @@ Riley,Dutro,"""The Perfect Storm""",Flyweight,14-4-0 (W-L-D),/athlete/riley-dutr
 Merab,Dvalishvili,"""The Machine""",Bantamweight,15-4-0 (W-L-D),/athlete/merab-dvalishvili
 David,Dvorak,"""Undertaker""",Flyweight,20-5-0 (W-L-D),/athlete/david-dvorak
 Roybert,Echeverria,"""The Unbroken""",Flyweight,0-1-0 (W-L-D),/athlete/roy-echeverria
-Adli,Edwards,,Featherweight,0-0-0 (W-L-D),/athlete/adli-edwards
 Joselyne,Edwards,"""La Pantera""",Women's Bantamweight,12-4-0 (W-L-D),/athlete/joselyne-edwards
 Leon,Edwards,"""Rocky""",Welterweight,20-3-0 (W-L-D),/athlete/leon-edwards
+Adli,Edwards,,Featherweight,0-0-0 (W-L-D),/athlete/adli-edwards
 Stephanie,Egger,,Women's Featherweight,8-3-0 (W-L-D),/athlete/stephanie-egger
 Evan,Elder,"""The Phenom """,Lightweight,7-2-0 (W-L-D),/athlete/evan-elder
 Joao,Elias,,Flyweight,0-1-0 (W-L-D),/athlete/joao-elias
@@ -303,6 +307,7 @@ Erisson,Ferreira,,Flyweight,1-1-0 (W-L-D),/athlete/filipe-lins-2
 Brunno,Ferreira,,Middleweight,10-0-0 (W-L-D),/athlete/brunno-ferreira
 Diego,Ferreira,,Lightweight,17-5-0 (W-L-D),/athlete/diego-ferreira
 Andre,Fialho,,Welterweight,16-6-0 (W-L-D),/athlete/andre-fialho
+Andrew,Fields,"""Casper""",Welterweight,0-0-0 (W-L-D),/athlete/andrew-fields
 Michal,Figlak,"""Mad Dog """,Lightweight,8-1-0 (W-L-D),/athlete/michal-figlak
 Deiveson,Figueiredo,"""Deus da Guerra""",Flyweight,21-3-1 (W-L-D),/athlete/deiveson-figueiredo
 Jafel,Filho,,Flyweight,14-2-0 (W-L-D),/athlete/jafel-filho
@@ -321,7 +326,7 @@ Brianna,Fortino,"""The Bull""",Women's Strawweight,9-3-0 (W-L-D),/athlete/briann
 Kai,Kara-France,"""Don't Blink""",Flyweight,24-10-0 (W-L-D),/athlete/kai-kara-france
 Stephanie,Frausto,,Women's Strawweight,0-1-0 (W-L-D),/athlete/stephanie-frausto
 Donavon,Frelow,,Bantamweight,6-3-0 (W-L-D),/athlete/donavon-frelow
-Josh,Fremd,,Middleweight,9-5-0 (W-L-D),/athlete/josh-fremd
+Josh,Fremd,,Middleweight,9-4-0 (W-L-D),/athlete/josh-fremd
 Matt,Frevola,"""The SteamRolla""",Lightweight,10-3-1 (W-L-D),/athlete/matt-frevola
 Jinh,Yu,,Women's Strawweight,11-8-0 (W-L-D),/athlete/jinh-yu-frey
 Waylon,Frost,"""Ice Cold""",Welterweight,0-0-0 (W-L-D),/athlete/waylon-frost
@@ -358,6 +363,7 @@ Justin,Gonzales,"""J-Train""",Featherweight,9-0-0 (W-L-D),/athlete/justin-gonzal
 Mikey,Gonzalez,,Lightweight,0-1-0 (W-L-D),/athlete/mikey-gonzalez
 Erick,Gonzalez,"""The Ghost Pepper""",Lightweight,14-8-0 (W-L-D),/athlete/mariya-agapova-1
 Lyman,Good,"""Cyborg""",Welterweight,21-6-0 (W-L-D),/athlete/lyman-good
+Jared,Gooden,"""Nite Train""",Welterweight,18-7-0 (W-L-D),/athlete/jared-gooden
 Malcolm,Gordon,"""X""",Flyweight,14-6-0 (W-L-D),/athlete/malcolm-gordon
 Tebaris,Gordon,"""Boom""",Heavyweight,3-1-0 (W-L-D),/athlete/tebaris-gordon
 Jared,Gordon,"""Flash""",Lightweight,19-6-0 (W-L-D),/athlete/jared-gordon
@@ -396,8 +402,8 @@ John,Hathaway,"""The Hitman""",Welterweight,17-2-0 (W-L-D),/athlete/john-hathawa
 Phil,Hawes,"""No Hype """,Middleweight,12-4-0 (W-L-D),/athlete/phillip-hawes
 Ian,Heinisch,"""The Hurricane""",Middleweight,14-5-0 (W-L-D),/athlete/ian-heinisch
 José,Henrique,,Welterweight,0-1-0 (W-L-D),/athlete/jose-henrique
-Victor,Henry,"""La Mangosta""",Bantamweight,22-6-0 (W-L-D),/athlete/victor-henry
 Danny,Henry,"""The Hatchet""",Featherweight,12-4-0 (W-L-D),/athlete/danny-henry
+Victor,Henry,"""La Mangosta""",Bantamweight,22-6-0 (W-L-D),/athlete/victor-henry
 Jai,Herbert,"""Black Country Banger""",Lightweight,12-4-0 (W-L-D),/athlete/jai-herbert
 Ed,Herman,"""Short Fuse""",Light Heavyweight,27-15-0 (W-L-D),/athlete/ed-herman
 Jack,Hermansson,"""The Joker""",Middleweight,23-8-0 (W-L-D),/athlete/jack-hermansson
@@ -409,7 +415,7 @@ Kailan,Hill,,Middleweight,0-0-0 (W-L-D),/athlete/kailan-hill
 Tyler,Hill,"""Zombie""",Welterweight,6-1-0 (W-L-D),/athlete/tyler-hill
 Jamahal,Hill,"""Sweet Dreams""",Light Heavyweight,12-1-0 (W-L-D),/athlete/jamahal-hill
 Angela,Hill,"""Overkill""",Women's Strawweight,15-12-0 (W-L-D),/athlete/angela-hill
-Anthony,Hintz,"""Static""",Heavyweight,0-0-0 (W-L-D),/athlete/anthony-hintz
+Anthony,Hintz,"""Static""",Light Heavyweight,0-0-0 (W-L-D),/athlete/anthony-hintz
 Frank,Holland,"""The Tank""",Heavyweight,0-0-0 (W-L-D),/athlete/frank-holland
 Kevin,Holland,"""Trailblazer""",Welterweight,23-9-0 (W-L-D),/athlete/kevin-holland
 Max,Holloway,"""Blessed""",Featherweight,23-7-0 (W-L-D),/athlete/max-holloway
@@ -432,6 +438,7 @@ Blagoy,Ivanov,"""Baga""",Heavyweight,19-5-0 (W-L-D),/athlete/blagoy-ivanov
 Jason,Jackson,"""Jah-Son""",Welterweight,7-3-0 (W-L-D),/athlete/jason-jackson
 Montel,Jackson,"""Quik""",Bantamweight,13-2-0 (W-L-D),/athlete/montel-jackson
 Damon,Jackson,"""Action""",Featherweight,22-5-1 (W-L-D),/athlete/damon-jackson
+Brian,Jackson,"""Stone Handz""",Middleweight,0-0-0 (W-L-D),/athlete/brian-jackson
 Richard,Jacobi,,Heavyweight,0-1-0 (W-L-D),/athlete/richard-jacobi
 Dustin,Jacoby,"""The Hanyak""",Light Heavyweight,18-6-1 (W-L-D),/athlete/dustin-jacoby
 Virna,Jandiroba,"""Carcará""",Women's Strawweight,18-3-0 (W-L-D),/athlete/virna-jandiroba
@@ -445,11 +452,11 @@ Asikerbai,Jinensibieke,,Lightweight,0-0-0 (W-L-D),/athlete/asikerbai-jinensibiek
 Li,Jingliang,"""The Leech""",Welterweight,19-8-0 (W-L-D),/athlete/li-jingliang
 Miles,Johns,"""Chapo""",Bantamweight,13-2-0 (W-L-D),/athlete/miles-johns
 Taylor,Johnson,,Middleweight,0-0-0 (W-L-D),/athlete/taylor-johnson
-Chad,Johnson,,Heavyweight,6-2-0 (W-L-D),/athlete/chad-johnson
 Tony,Johnson,,Light Heavyweight,7-2-0 (W-L-D),/athlete/tony-johnson
 Michael,Johnson,"""The Menace""",Lightweight,22-18-0 (W-L-D),/athlete/michael-johnson
 Charles,Johnson,"""Inner G""",Flyweight,13-4-0 (W-L-D),/athlete/charles-johnson
 Jose,Johnson,"""Lobo Solitario""",Bantamweight,15-7-0 (W-L-D),/athlete/jose-johnson
+Chad,Johnson,,Heavyweight,6-2-0 (W-L-D),/athlete/chad-johnson
 Daniel,Jolly,"""Werewolf of Texas""",Light Heavyweight,5-3-0 (W-L-D),/athlete/daniel-jolly
 Jamelle,Jones,"""The Beast""",Light Heavyweight,7-5-0 (W-L-D),/athlete/jamelle-jones
 Justin,Jones,,Middleweight,9-2-0 (W-L-D),/athlete/dzhastin-dzhaynes-0
@@ -505,6 +512,7 @@ Guram,Kutateladze,"""Georgian Viking""",Lightweight,12-3-0 (W-L-D),/athlete/gura
 Luan,Lacerda,,Bantamweight,12-2-0 (W-L-D),/athlete/luan-lacerda
 Yohan,Lainesse,"""White Lion""",Welterweight,9-2-0 (W-L-D),/athlete/nassurdin-imavov-1
 Sean,Lally,"""The Unpredictable One""",Welterweight,8-4-0 (W-L-D),/athlete/sean-lally
+Joseph,Landman,,Light Heavyweight,0-0-0 (W-L-D),/athlete/joseph-landman
 Nate,Landwehr,"""The Train""",Featherweight,16-4-0 (W-L-D),/athlete/nate-landwehr
 Austen,Lane,,Heavyweight,12-3-0 (W-L-D),/athlete/austen-lane
 Lina,Lansberg,"""Elbow Queen""",Women's Bantamweight,10-8-0 (W-L-D),/athlete/lina-lansberg
@@ -557,8 +565,8 @@ Ian,Machado,"""The Future""",Welterweight,11-0-0 (W-L-D),/athlete/nassurdin-imav
 Pauline,Macias,,Women's Strawweight,0-1-0 (W-L-D),/athlete/pauline-macias
 Mark,Madsen,"""The Olympian""",Lightweight,12-1-0 (W-L-D),/athlete/mark-madsen
 Neil,Magny,"""The Haitian Sensation""",Welterweight,27-11-0 (W-L-D),/athlete/neil-magny
-Shara,Magomedov,,Middleweight,0-0-0 (W-L-D),/athlete/shara-magomedov
 Abus,Magomedov,,Middleweight,25-4-1 (W-L-D),/athlete/abner-lloveras-1
+Shara,Magomedov,,Middleweight,0-0-0 (W-L-D),/athlete/shara-magomedov
 Maheshate,,,Lightweight,9-2-0 (W-L-D),/athlete/filipe-lins-3
 Nayara,Maia,,Women's Flyweight,0-1-0 (W-L-D),/athlete/nayara-maia
 Jennifer,Maia,,Women's Flyweight,20-9-1 (W-L-D),/athlete/jennifer-maia
@@ -576,16 +584,16 @@ Julian,Marquez,"""The Cuban Missile Crisis""",Middleweight,9-4-0 (W-L-D),/athlet
 Francis,Marshall,"""Fire""",Featherweight,7-0-0 (W-L-D),/athlete/francis-marshall
 Michal,Martinek,"""Blackbeard""",Heavyweight,0-0-0 (W-L-D),/athlete/michal-martinek
 Melissa,Martinez,"""Super Mely""",Women's Strawweight,7-1-0 (W-L-D),/athlete/melissa-martinez
-Jonathan,Martinez,"""Dragon""",Bantamweight,17-4-0 (W-L-D),/athlete/jonathan-martinez
 Victor,Martinez,"""The Brick""",Lightweight,13-5-0 (W-L-D),/athlete/dzhonatan-pirs-2
 Mana,Martinez,"""ManaBoi""",Bantamweight,10-4-0 (W-L-D),/athlete/uillyam-nayt-1
+Jonathan,Martinez,"""Dragon""",Bantamweight,17-4-0 (W-L-D),/athlete/jonathan-martinez
 Tiffany,Masters,"""Rainbow Renegade""",Women's Strawweight,2-1-0 (W-L-D),/athlete/tiffany-masters
 Jorge,Masvidal,"""Gamebred""",Welterweight,35-16-0 (W-L-D),/athlete/jorge-masvidal
 Darius,Mata-Varona,"""The Destroyer""",Heavyweight,0-0-0 (W-L-D),/athlete/darius-mata-varona
 Al,Matavao,,Light Heavyweight,0-1-0 (W-L-D),/athlete/al-matavao
 Koyomi,Matsushima,,Featherweight,1-1-0 (W-L-D),/athlete/koyomi-matsushima
-Connor,Matthews,,Featherweight,0-1-0 (W-L-D),/athlete/connor-matthews
 Jake,Matthews,"""The Celtic Kid""",Welterweight,18-6-0 (W-L-D),/athlete/jake-matthews
+Connor,Matthews,,Featherweight,0-1-0 (W-L-D),/athlete/connor-matthews
 Miranda,Maverick,"""Fear The""",Women's Flyweight,13-4-0 (W-L-D),/athlete/miranda-maverick
 Jack,May,"""The Outlaw""",Heavyweight,7-2-0 (W-L-D),/athlete/jack-may
 Don'Tale,Mayes,"""King Kong""",Heavyweight,9-5-0 (W-L-D),/athlete/dontale-mayes
@@ -782,6 +790,8 @@ Claudio,Ribeiro,,Middleweight,10-3-0 (W-L-D),/athlete/claudio-ribeiro
 Esteban,Ribovics,"""El Gringo""",Lightweight,11-1-0 (W-L-D),/athlete/esteban-ribovics
 Tabatha,Ricci,"""Baby Shark""",Women's Strawweight,8-1-0 (W-L-D),/athlete/tabatha-ricci
 Brad,Riddell,"""Quake""",Lightweight,10-4-0 (W-L-D),/athlete/brad-riddell
+Jay,Rivera,"""The Mighty Thor""",Welterweight,0-0-0 (W-L-D),/athlete/jay-rivera
+Russell,Rivero,"""Kainoa""",Light Heavyweight,0-0-0 (W-L-D),/athlete/russell-rivero
 Theo,Rlayang,,Featherweight,0-1-0 (W-L-D),/athlete/teo-rlaeng
 Kali,Robbins,"""Pop Tart""",Women's Strawweight,6-2-0 (W-L-D),/athlete/kali-robbins
 Danny,Roberts,"""Hot Chocolate""",Welterweight,18-7-0 (W-L-D),/athlete/danny-roberts
@@ -828,12 +838,12 @@ James,Santamaria,"""Jimmy""",Middleweight,0-0-0 (W-L-D),/athlete/james-santamari
 Shaheen,Santana,,Lightweight,0-1-0 (W-L-D),/athlete/shaheen-santana
 Richie,Santiago,"""The Milford Mauler""",Bantamweight,7-1-0 (W-L-D),/athlete/richie-santiago
 Will,Santiago,"""The Brown Bomber""",Middleweight,9-6-0 (W-L-D),/athlete/will-santiago
-Daniel,Santos,"""Willycat""",Bantamweight,1-1-0 (W-L-D),/athlete/daniel-santos
 Marilia,Santos,,Women's Flyweight,0-0-0 (W-L-D),/athlete/marilia-santos
 Edivan,Santos,,Heavyweight,0-1-0 (W-L-D),/athlete/mario-souza-2
 Leonardo,Santos,,Lightweight,18-7-1 (W-L-D),/athlete/leonardo-santos
 Taila,Santos,,Women's Flyweight,19-2-0 (W-L-D),/athlete/taila-santos
 Yana,Santos,,Women's Bantamweight,14-6-0 (W-L-D),/athlete/yana-kunitskaya
+Daniel,Santos,"""Willycat""",Bantamweight,1-1-0 (W-L-D),/athlete/daniel-santos
 Jeka,Saragih,,Lightweight,13-3-0 (W-L-D),/athlete/jeka-saragih
 Keisuke,Sasu,"""“Sasuke”""",Featherweight,1-1-0 (W-L-D),/athlete/keisuke-sasu
 Takashi,Sato,"""Ten""",Welterweight,16-7-0 (W-L-D),/athlete/takashi-sato
@@ -855,13 +865,13 @@ Jack,Shore,"""Tank""",Featherweight,16-1-0 (W-L-D),/athlete/jack-shore
 Maria,Silva,,Women's Strawweight,1-1-0 (W-L-D),/athlete/mariya-agapova-3
 Jansey,Silva,,Middleweight,0-1-0 (W-L-D),/athlete/trevin-dzhayls-3
 Jacob,Silva,,Flyweight,0-2-0 (W-L-D),/athlete/jacob-silva
-Bruno,Silva,"""Bulldog""",Flyweight,12-5-2 (W-L-D),/athlete/bruno-silva
 Natalia,Silva,,Women's Flyweight,14-5-1 (W-L-D),/athlete/natalia-silva
 Erik,Silva,"""The King """,Featherweight,9-2-0 (W-L-D),/athlete/erik-silva
 Karine,Silva,"""Killer""",Women's Flyweight,15-4-0 (W-L-D),/athlete/trevin-dzhayls-0
 Bruno,Silva,"""Blindado""",Middleweight,22-8-0 (W-L-D),/athlete/bruno-silva-blindado
 Joaquim,Silva,"""Netto BJJ""",Lightweight,12-4-0 (W-L-D),/athlete/joaquim-silva
 Mayra,Bueno,"""Sheetara""",Women's Bantamweight,10-2-1 (W-L-D),/athlete/mayra-bueno-silva
+Bruno,Silva,"""Bulldog""",Flyweight,12-5-2 (W-L-D),/athlete/bruno-silva
 Douglas,Silva,"""D Silva""",Bantamweight,28-5-0 (W-L-D),/athlete/douglas-silva-de-andrade
 Ricky,Simon,,Bantamweight,20-3-0 (W-L-D),/athlete/ricky-simon
 Everett,Sims,,Heavyweight,4-1-0 (W-L-D),/athlete/everett-sims
@@ -910,6 +920,7 @@ Taneisha,Tennant,,Women's Featherweight,5-1-0 (W-L-D),/athlete/taneisha-tennant
 Testy,Test,"""Testy""",Heavyweight,0-0-0 (W-L-D),/athlete/testy-test
 David,Teymur,,Lightweight,8-2-0 (W-L-D),/athlete/david-teymur
 Christapher,Thomas,"""KO Chris""",Welterweight,0-0-0 (W-L-D),/athlete/christapher-thomas
+Timothy,Thomas,"""The Gorilla""",Heavyweight,0-0-0 (W-L-D),/athlete/timothy-thomas
 Stephen,Thompson,"""Wonderboy""",Welterweight,17-6-1 (W-L-D),/athlete/stephen-thompson
 Darren,Till,"""The Gorilla""",Middleweight,18-5-1 (W-L-D),/athlete/darren-till
 Denis,Tiuliulin,,Middleweight,11-7-0 (W-L-D),/athlete/denis-tiuliulin
@@ -987,8 +998,8 @@ Sean,Woodson,"""The Sniper""",Featherweight,9-1-1 (W-L-D),/athlete/sean-woodson
 Jordan,Wright,"""The Beverly Hills Ninja""",Light Heavyweight,12-5-0 (W-L-D),/athlete/jordan-wright
 Rani,Yahya,,Bantamweight,28-10-1 (W-L-D),/athlete/rani-yahya
 Qihui,Yan,,Women's Flyweight,0-1-0 (W-L-D),/athlete/qihui-yan
-Petr,Yan,"""No Mercy""",Bantamweight,16-4-0 (W-L-D),/athlete/petr-yan
 Xiaonan,Yan,,Women's Strawweight,16-3-0 (W-L-D),/athlete/xiaonan-yan
+Petr,Yan,"""No Mercy""",Bantamweight,16-4-0 (W-L-D),/athlete/petr-yan
 Adrian,Yanez,,Bantamweight,16-3-0 (W-L-D),/athlete/adrian-yanez
 Ashley,Yoder,"""Spider Monkey""",Women's Strawweight,8-8-0 (W-L-D),/athlete/ashley-yoder
 Sang,Hoon,,Lightweight,0-0-0 (W-L-D),/athlete/sang-hoon-yoo
